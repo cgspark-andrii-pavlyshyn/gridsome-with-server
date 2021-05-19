@@ -1,0 +1,44 @@
+@import '~/assets/scss/constants.scss';
+
+.section--contact-us-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-us__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-us__label {
+  margin-bottom: 10px;
+}
+
+.contact-us__input {
+  padding: 15px 10px;
+  border: none;
+  background-color: lighten($accent, 20%);
+  border-radius: 10px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.contact-us__submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}

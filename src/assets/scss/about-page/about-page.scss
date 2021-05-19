@@ -1,0 +1,27 @@
+@import '~/assets/scss/constants.scss';
+
+.section--about-page {
+  min-height: 100vh;
+  padding-top: 200px;
+}
+
+.about__content {
+  h1 {
+    font-size: $fz56;
+    color: $accent;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $accent;
+  }
+
+  img {
+    margin: 50px auto;
+    display: block;
+    height: auto;
+  }
+
+  p {
+    max-width: 100%;
+  }
+}
+
+@import 'about-page-media.scss';
