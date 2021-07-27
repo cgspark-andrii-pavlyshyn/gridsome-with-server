@@ -83,11 +83,7 @@
 </style>
 
 <script>
-
 export default {
-  components: {
-
-  },
   metaInfo: {
     title: 'Home page'
   }

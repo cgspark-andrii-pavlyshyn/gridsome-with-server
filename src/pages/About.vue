@@ -2,12 +2,12 @@
   <Layout>
     <section
       class="section section--about-page">
-        <div class="container">
-          <div 
-            v-html="$page.aboutContent.edges[0].node.acf.about_page_content"
-            class="about__content"></div>
-        </div>
-      </section>
+      <div class="container">
+        <div 
+          v-html="$page.aboutContent.edges[0].node.acf.about_page_content"
+          class="about__content"></div>
+      </div>
+    </section>
   </Layout>
 </template>
 
