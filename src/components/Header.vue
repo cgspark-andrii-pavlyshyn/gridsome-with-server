@@ -58,15 +58,15 @@ query Options {
 }
 </static-query>
 
-<script>
+<script lang="ts">
 export default {
   methods: {
-    menuVision: function(hideRemove) {
-      const offcanvas        = document.getElementById('js-offcanvas-menu');
+    menuVision: function(hideRemove: string): void {
+      const offcanvas = document.getElementById('js-offcanvas-menu');
       const offcanvasOverlay = document.getElementById('js-offcanvas__overlay');
 
-      offcanvas.classList.[hideRemove]('open');
-      offcanvasOverlay.classList.[hideRemove]('open');
+      offcanvas?.classList?.[hideRemove]('open');
+      offcanvasOverlay?.classList?.[hideRemove]('open');
     }
   },
   mounted () {
@@ -75,9 +75,9 @@ export default {
 
     window.addEventListener('scroll', (e) => {
       if(window.pageYOffset > offset) {
-        document.getElementById('js-header').classList.add('sticky');
+        document.getElementById('js-header')?.classList.add('sticky');
       } else {
-        document.getElementById('js-header').classList.remove('sticky');
+        document.getElementById('js-header')?.classList.remove('sticky');
       }
     });
   }
