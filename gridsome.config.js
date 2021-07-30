@@ -19,6 +19,9 @@ module.exports = {
         typeName: 'WordPress', // GraphQL schema name (Optional)
         apiBase: 'wp-json',
       }
+    },
+    {
+      use: 'gridsome-plugin-typescript',
     }
   ]
 }
